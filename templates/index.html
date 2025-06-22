@@ -1,20 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ClanWAN</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-    </style>
+    <title>ClanWAN Horizontal Panes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to ClanWAN</h1>
-    <p>for Researchers in center from all dimensions</p>
-    <p>M Vamsi kiran - Mamatha Prashanthi - Kundana - Rohan</p>
+
+    <div class="content">
+        <p class="big_p"><strong>Dear Elephant</strong></p>
+        <h1>Welcome to ClanWAN</h1>
+        
+        <p class="big_p"><b>Register for <i>serengity</i> entry or Login with <i>trumpets</i> </b></p>
+        <ul style="text-align: left;">
+            <!--
+            <li>Research Scientists</li>
+            <li>Research Scholars</li>
+            <li>Stock Market Information Seekers</li>
+            <li>Stock Market (Algo Trading Support)</li>
+            -->
+        </ul>
+    </div>
+
+    <!-- Panes displayed horizontally -->
+<div class="panes-container">
+    <div class="pane pane1">
+        <div class="pane-content">
+            Research Scientists<br><br><br>
+            <button class="btn">Register</button>
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <div class="pane pane2">
+        <div class="pane-content">
+            Research Scholars<br><br><br>
+            <button class="btn">Register</button>
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <div class="pane pane3">
+        <div class="pane-content">
+            Stock Market Information Seekers<br><br><br>
+            <button class="btn">Register</button>
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <div class="pane pane4">
+        <div class="pane-content">
+            Stock Market (Algo Trading Support)<br><br><br>
+            <button class="btn">Register</button>
+            <button class="btn">Login</button>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
